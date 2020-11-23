@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/DuckController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/DuckType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/duck/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/duck/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/duck/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/duck/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/duck/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Duck.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Duck.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/quack/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,10 +157,15 @@
     <property name="DatabaseDriversLRU" value="redshift&#10;sqlite.xerial" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/duck" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\campus\projet-symfony\quacknet\templates\duck" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -164,7 +176,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605887977153</updated>
       <workItem from="1605887978395" duration="1756000" />
-      <workItem from="1605971842216" duration="8946000" />
+      <workItem from="1605971842216" duration="9165000" />
+      <workItem from="1606120314328" duration="8409000" />
     </task>
     <servers />
   </component>
@@ -192,6 +205,10 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605976662065" />
+    <state x="-1110" y="-30" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606120522247">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
+    </state>
+    <state x="-1110" y="-30" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606120522247" />
     <state x="-1060" y="-30" key="FileChooserDialogImpl" timestamp="1605973481317">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
@@ -200,9 +217,17 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605973499036" />
+    <state x="-1073" y="-62" key="NewPhpClassDialog" timestamp="1606121387056">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
+    </state>
+    <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606121387056" />
     <state x="-1339" y="-140" key="SettingsEditor" timestamp="1605972144271">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
+    <state x="56" y="-13" width="1256" height="816" key="dock-window-1" timestamp="1606128663596">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="56" y="-13" width="1256" height="816" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606128663596" />
   </component>
 </project>
