@@ -68,9 +68,6 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         }
 
         $user = $this->entityManager->getRepository(Duck::class)->findOneBy(['email' => $credentials['email']]);
-        if (!$user){
-            $user = $this->entityManager->getRepository(Duck::class)->findOneBy(['duckname' => $credentials['email']]);
-        }
 
         if (!$user) {
             // fail authentication with a custom error

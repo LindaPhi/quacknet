@@ -20,16 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/DuckController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/DuckType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/duck/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/duck/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/duck/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/duck/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/duck/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201120160236.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201120220233.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DuckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DuckController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/QuackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QuackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Duck.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Duck.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Quack.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Quack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/QuackType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/QuackType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/duck/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/duck/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/duck/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/duck/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/quack/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +183,7 @@
       <updated>1605887977153</updated>
       <workItem from="1605887978395" duration="1756000" />
       <workItem from="1605971842216" duration="9165000" />
-      <workItem from="1606120314328" duration="8409000" />
+      <workItem from="1606120314328" duration="23442000" />
     </task>
     <servers />
   </component>
@@ -217,17 +223,25 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605973499036" />
-    <state x="-1073" y="-62" key="NewPhpClassDialog" timestamp="1606121387056">
+    <state x="-1073" y="-62" key="NewPhpClassDialog" timestamp="1606143346228">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
-    <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606121387056" />
+    <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606143346228" />
     <state x="-1339" y="-140" key="SettingsEditor" timestamp="1605972144271">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
-    <state x="56" y="-13" width="1256" height="816" key="dock-window-1" timestamp="1606128663596">
+    <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606140546534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="56" y="-13" width="1256" height="816" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606128663596" />
+    <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606140546534" />
+    <state x="-997" y="-12" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606146508593">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
+    </state>
+    <state x="-997" y="-12" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606146508593" />
+    <state x="-1502" y="-308" width="1256" height="588" maximized="true" key="dock-window-1" timestamp="1606147356789">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
+    </state>
+    <state x="-1502" y="-308" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606147356789" />
   </component>
 </project>

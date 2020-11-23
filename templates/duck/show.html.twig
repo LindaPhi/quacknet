@@ -1,38 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Quack{% endblock %}
+{% block title %}Duck{% endblock %}
 
 {% block body %}
-    <h1>Quack</h1>
+    <h1>Duck</h1>
 
     <table class="table">
         <tbody>
             <tr>
                 <th>Id</th>
-                <td>{{ quack.id }}</td>
+                <td>{{ duck.id }}</td>
             </tr>
             <tr>
                 <th>Duckname</th>
-                <td>{{ quack.duckname }}</td>
+                <td>{{ duck.duckname }}</td>
             </tr>
             <tr>
                 <th>Firstname</th>
-                <td>{{ quack.firstname }}</td>
+                <td>{{ duck.firstname }}</td>
             </tr>
             <tr>
                 <th>Lastname</th>
-                <td>{{ quack.lastname }}</td>
+                <td>{{ duck.lastname }}</td>
             </tr>
             <tr>
                 <th>Email</th>
-                <td>{{ quack.email }}</td>
+                <td>{{ duck.email }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('quack_index') }}">back to list</a>
+    <a href="{{ path('duck_index') }}">back to list</a>
 
-    <a href="{{ path('quack_edit', {'id': quack.id}) }}">edit</a>
+    <a href="{{ path('duck_edit', {'id': duck.id}) }}">edit</a>
 
-    {{ include('quack/_delete_form.html.twig') }}
+    {{ include('duck/_delete_form.html.twig') }}
 {% endblock %}

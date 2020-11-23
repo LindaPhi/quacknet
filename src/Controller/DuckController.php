@@ -28,7 +28,6 @@ class DuckController extends AbstractController
         ]);
     }
 
-
     /**
      * @Route("/{id}", name="duck_show", methods={"GET"})
      */

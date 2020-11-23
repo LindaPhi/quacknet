@@ -16,6 +16,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class QuackController extends AbstractController
 {
     /**
+     * @var \DateTime
+     */
+    private $created_at;
+
+    /**
      * @Route("/", name="quack_index", methods={"GET"})
      */
     public function index(QuackRepository $quackRepository): Response
@@ -30,22 +35,23 @@ class QuackController extends AbstractController
      */
     public function new(Request $request): Response
     {
-        $quack = new Quack();
-        $form = $this->createForm(QuackType::class, $quack);
-        $form->handleRequest($request);
+            $quack = new Quack();
+            $form = $this->createForm(QuackType::class, $quack);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($quack);
-            $entityManager->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $quack = setCreatedAt(new \DateTime('now'));
+                dd($quack);
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->persist($quack);
+                $entityManager->flush();
+                return $this->redirectToRoute('quack_index');
+            }
 
-            return $this->redirectToRoute('quack_index');
-        }
-
-        return $this->render('quack/new.html.twig', [
-            'quack' => $quack,
-            'form' => $form->createView(),
-        ]);
+            return $this->render('quack/new.html.twig', [
+                'quack' => $quack,
+                'form' => $form->createView(),
+            ]);
     }
 
     /**

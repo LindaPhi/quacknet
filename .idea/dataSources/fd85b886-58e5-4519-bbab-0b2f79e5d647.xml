@@ -86,54 +86,78 @@
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="24" parent="7">
+    <index id="24" parent="7" name="UNIQ_538A954790361416">
+      <ColNames>duckname</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="25" parent="7">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="25" parent="8" name="id">
+    <column id="26" parent="8" name="id">
       <Position>1</Position>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="26" parent="8" name="content">
+    <column id="27" parent="8" name="autor_id">
       <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <column id="28" parent="8" name="content">
+      <Position>3</Position>
       <DataType>VARCHAR(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="8" name="created_at">
-      <Position>3</Position>
+    <column id="29" parent="8" name="created_at">
+      <Position>4</Position>
       <DataType>DATETIME|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="28" parent="8">
+    <column id="30" parent="8" name="picture">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <index id="31" parent="8" name="IDX_83D44F6F14D45BBE">
+      <ColNames>autor_id</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="32" parent="8">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="29" parent="9" name="type">
+    <foreign-key id="33" parent="8" name="FK_83D44F6F14D45BBE">
+      <ColNames>autor_id</ColNames>
+      <RefTableName>duck</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="34" parent="9" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="30" parent="9" name="name">
+    <column id="35" parent="9" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="31" parent="9" name="tbl_name">
+    <column id="36" parent="9" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="32" parent="9" name="rootpage">
+    <column id="37" parent="9" name="rootpage">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="33" parent="9" name="sql">
+    <column id="38" parent="9" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="34" parent="10" name="name">
+    <column id="39" parent="10" name="name">
       <Position>1</Position>
     </column>
-    <column id="35" parent="10" name="seq">
+    <column id="40" parent="10" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

@@ -27,6 +27,18 @@ class Quack
      */
     private $created_at;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $picture;
+
+    public $upload;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Duck::class, inversedBy="quacks")
+     */
+    private $autor;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -52,6 +64,30 @@ class Quack
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
         $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    public function getPicture(): ?string
+    {
+        return $this->picture;
+    }
+
+    public function setPicture(?string $picture): self
+    {
+        $this->picture = $picture;
+
+        return $this;
+    }
+
+    public function getAutor(): ?Duck
+    {
+        return $this->autor;
+    }
+
+    public function setAutor(?Duck $autor): self
+    {
+        $this->autor = $autor;
 
         return $this;
     }
