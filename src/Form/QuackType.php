@@ -15,7 +15,6 @@ class QuackType extends AbstractType
         $builder
             ->add('upload',FileType::class)
             ->add('content')
-//            ->add('created_at')
         ;
     }
 

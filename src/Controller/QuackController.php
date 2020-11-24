@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
+use App\Entity\Duck;
 use App\Entity\Quack;
 use App\Form\QuackType;
 use App\Repository\QuackRepository;
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,10 +18,7 @@ use Symfony\Component\String\Slugger\SluggerInterface;
  */
 class QuackController extends AbstractController
 {
-    /**
-     * @var \DateTime
-     */
-    private $created_at;
+
 
     /**
      * @Route("/", name="quack_index", methods={"GET"})
@@ -53,10 +52,14 @@ class QuackController extends AbstractController
                 } catch (FileException $e) {
                     dd("Dont Move !");
                 }
-                dd("fin");
-                dd($uploaded_data);
-                $quack = setCreatedAt(new \DateTime('now'));
-                dd($quack);
+//                $path_upload_dir = $this->getParameter('upload_dir');
+//                $path_upload_dir = substr($path_upload_dir, strpos($path_upload_dir, "quacknet"));
+                $quack->setPicture($newFilename);
+                $quack->setAutor($this->getUser());
+
+                $date=new DateTime('now',new \DateTimeZone('Europe/Paris'));
+                $quack->setCreatedAt($date);
+
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($quack);
                 $entityManager->flush();

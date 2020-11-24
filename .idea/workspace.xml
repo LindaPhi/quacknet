@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/QuackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QuackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/QuackType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/QuackType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/quack/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/quack/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +36,6 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -154,7 +157,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/duck" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -173,7 +176,7 @@
       <workItem from="1605887978395" duration="1756000" />
       <workItem from="1605971842216" duration="9165000" />
       <workItem from="1606120314328" duration="23542000" />
-      <workItem from="1606205626753" duration="6019000" />
+      <workItem from="1606205626753" duration="15881000" />
     </task>
     <servers />
   </component>
@@ -197,10 +200,11 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1248" y="-126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605973492476" />
-    <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605976662065">
-      <screen x="-1680" y="-289" width="1680" height="1010" />
+    <state x="2" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606223960706">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605976662065" />
+    <state x="2" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606223960706" />
     <state x="-1110" y="-30" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606120522247">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
@@ -217,11 +221,11 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606143346228" />
-    <state x="80" y="17" key="SettingsEditor" timestamp="1606211749282">
+    <state x="80" y="17" key="SettingsEditor" timestamp="1606211977596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
-    <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211749282" />
+    <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211977596" />
     <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606140546534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -230,14 +234,14 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-997" y="-12" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606146508593" />
-    <state x="269" y="-16" width="1256" height="588" maximized="true" key="dock-window-1" timestamp="1606208202498">
+    <state x="676" y="0" width="697" height="735" maximized="true" key="dock-window-1" timestamp="1606222588197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1502" y="-308" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606206817726" />
-    <state x="269" y="-16" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606208202498" />
-    <state x="390" y="68" width="585" height="592" key="find.popup" timestamp="1606210364854">
+    <state x="676" y="0" width="697" height="735" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606222588197" />
+    <state x="390" y="68" width="585" height="592" key="find.popup" timestamp="1606224014688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="68" width="585" height="592" key="find.popup/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606210364854" />
+    <state x="390" y="68" width="585" height="592" key="find.popup/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606224014688" />
   </component>
 </project>
