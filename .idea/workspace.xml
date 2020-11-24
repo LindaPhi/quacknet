@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DuckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DuckController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/QuackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QuackController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +170,7 @@
       <workItem from="1605887978395" duration="1756000" />
       <workItem from="1605971842216" duration="9165000" />
       <workItem from="1606120314328" duration="23542000" />
-      <workItem from="1606205626753" duration="3416000" />
+      <workItem from="1606205626753" duration="5389000" />
     </task>
     <servers />
   </component>
@@ -216,10 +214,11 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606143346228" />
-    <state x="-1339" y="-140" key="SettingsEditor" timestamp="1605972144271">
-      <screen x="-1680" y="-289" width="1680" height="1010" />
+    <state x="80" y="17" key="SettingsEditor" timestamp="1606211094192">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
+    <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211094192" />
     <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606140546534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -233,5 +232,9 @@
     </state>
     <state x="-1502" y="-308" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606206817726" />
     <state x="269" y="-16" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606208202498" />
+    <state x="390" y="68" width="585" height="592" key="find.popup" timestamp="1606210364854">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="68" width="585" height="592" key="find.popup/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606210364854" />
   </component>
 </project>
