@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Duck;
+use App\Entity\Quack;
 use App\Form\DuckType;
 use App\Repository\DuckRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -43,10 +44,12 @@ class DuckController extends AbstractController
      */
     public function edit(Request $request, Duck $duck, UserPasswordEncoderInterface $UserPasswordEncoderInterface ): Response
     {
+
         $form = $this->createForm(DuckType::class, $duck);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            dd($form->all());
             $duck->setPassword($UserPasswordEncoderInterface->encodePassword($duck, $duck->getPassword()));
             $this->getDoctrine()->getManager()->flush();
             return $this->redirectToRoute('duck_index');

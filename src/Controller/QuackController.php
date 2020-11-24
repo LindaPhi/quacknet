@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 /**
  * @Route("/quack")
@@ -33,13 +34,27 @@ class QuackController extends AbstractController
     /**
      * @Route("/new", name="quack_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, SluggerInterface $slugger): Response
     {
             $quack = new Quack();
             $form = $this->createForm(QuackType::class, $quack);
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
+                $uploaded_data = $form->all()['upload']->getData();
+                $originalFilename = pathinfo($uploaded_data->getClientOriginalName(),PATHINFO_FILENAME);
+                $safeFilename = $slugger->slug($originalFilename);
+                $newFilename = $safeFilename.'-'.uniqid().'.'.$uploaded_data->guessExtension();
+                try {
+                    $uploaded_data->move(
+                        $this->getParameter('upload_dir'),
+                        $newFilename
+                    );
+                } catch (FileException $e) {
+                    dd("Dont Move !");
+                }
+                dd("fin");
+                dd($uploaded_data);
                 $quack = setCreatedAt(new \DateTime('now'));
                 dd($quack);
                 $entityManager = $this->getDoctrine()->getManager();
