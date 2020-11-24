@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DuckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DuckController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="6effa174-1bf1-466e-81da-d1abe4aad11e" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -151,7 +154,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/duck" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -170,7 +173,7 @@
       <workItem from="1605887978395" duration="1756000" />
       <workItem from="1605971842216" duration="9165000" />
       <workItem from="1606120314328" duration="23542000" />
-      <workItem from="1606205626753" duration="5389000" />
+      <workItem from="1606205626753" duration="6019000" />
     </task>
     <servers />
   </component>
@@ -214,11 +217,11 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1073" y="-62" key="NewPhpClassDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606143346228" />
-    <state x="80" y="17" key="SettingsEditor" timestamp="1606211094192">
+    <state x="80" y="17" key="SettingsEditor" timestamp="1606211749282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
-    <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211094192" />
+    <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211749282" />
     <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606140546534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
