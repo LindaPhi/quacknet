@@ -20,9 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/quacknet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quacknet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201123143536.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201123161447.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201124103246.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/QuackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QuackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Quack.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Quack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/QuackType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/QuackType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/quack/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/quack/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/quack/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/show.html.twig" afterDir="false" />
     </list>
@@ -177,6 +188,7 @@
       <workItem from="1605971842216" duration="9165000" />
       <workItem from="1606120314328" duration="23542000" />
       <workItem from="1606205626753" duration="15881000" />
+      <workItem from="1606290256833" duration="15557000" />
     </task>
     <servers />
   </component>
@@ -226,22 +238,24 @@
     </state>
     <state x="-1339" y="-140" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605972144271" />
     <state x="80" y="17" key="SettingsEditor/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606211977596" />
-    <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606140546534">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1079" y="1" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606231872614">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
+    <state x="-1079" y="1" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606231872614" />
     <state x="489" y="209" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606140546534" />
     <state x="-997" y="-12" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606146508593">
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-997" y="-12" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606146508593" />
-    <state x="676" y="0" width="697" height="735" maximized="true" key="dock-window-1" timestamp="1606222588197">
+    <state x="0" y="0" width="1148" height="816" key="dock-window-1" timestamp="1606292113256">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1502" y="-308" width="1256" height="588" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606206817726" />
+    <state x="0" y="0" width="1148" height="816" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606292113256" />
     <state x="676" y="0" width="697" height="735" maximized="true" key="dock-window-1/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606222588197" />
-    <state x="390" y="68" width="585" height="592" key="find.popup" timestamp="1606224014688">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1200" y="-195" width="720" height="822" key="find.popup" timestamp="1606300423287">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
+    <state x="-1200" y="-195" width="720" height="822" key="find.popup/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606300423287" />
     <state x="390" y="68" width="585" height="592" key="find.popup/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606224014688" />
   </component>
 </project>

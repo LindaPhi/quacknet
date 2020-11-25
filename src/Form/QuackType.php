@@ -15,7 +15,12 @@ class QuackType extends AbstractType
         $builder
             ->add('upload',FileType::class)
             ->add('content')
-        ;
+            ->add('tags'
+//                ,CollectionType::class, [
+//                    'entry_type' => TagType::class,
+//                    'entry_options' => array('label'=>false)
+//                ]
+            );
     }
 
     public function configureOptions(OptionsResolver $resolver)

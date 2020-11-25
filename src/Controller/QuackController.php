@@ -4,10 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Duck;
 use App\Entity\Quack;
+use App\Entity\Tag;
 use App\Form\QuackType;
+use App\Form\TagType;
 use App\Repository\QuackRepository;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -36,6 +39,7 @@ class QuackController extends AbstractController
     public function new(Request $request, SluggerInterface $slugger): Response
     {
             $quack = new Quack();
+
             $form = $this->createForm(QuackType::class, $quack);
             $form->handleRequest($request);
 
@@ -56,18 +60,17 @@ class QuackController extends AbstractController
 //                $path_upload_dir = substr($path_upload_dir, strpos($path_upload_dir, "quacknet"));
                 $quack->setPicture($newFilename);
                 $quack->setAutor($this->getUser());
+                $dataTag = $form->all()['tags']->getData()[0];
+                $quack->addTag($dataTag);
 
                 $date=new DateTime('now',new \DateTimeZone('Europe/Paris'));
                 $quack->setCreatedAt($date);
-
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($quack);
                 $entityManager->flush();
                 return $this->redirectToRoute('quack_index');
             }
-
             return $this->render('quack/new.html.twig', [
-                'quack' => $quack,
                 'form' => $form->createView(),
             ]);
     }
