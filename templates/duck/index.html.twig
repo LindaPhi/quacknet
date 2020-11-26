@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}duck index{% endblock %}
+{% block title %}All ducks{% endblock %}
 
 {% block body %}
-    <h1>duck index</h1>
+    <h1>All ducks</h1>
 
     <table class="table">
         <thead>
@@ -24,7 +24,6 @@
                 <td>{{ duck.lastname }}</td>
                 <td>{{ duck.email }}</td>
                 <td>
-                    <a href="{{ path('duck_show', {'id': duck.id}) }}">show</a>
                     <a href="{{ path('duck_edit', {'id': duck.id}) }}">edit</a>
                 </td>
             </tr>

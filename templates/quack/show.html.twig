@@ -16,6 +16,13 @@
                 <td>{{ quack.content }}</td>
             </tr>
 
+            {% for comment in quack.comments %}
+            <tr>
+                <th>Comments</th>
+                <td>{{ comment.content }}</td>
+            </tr>
+            {% endfor %}
+
             {% for tag in quack.tags %}
             <tr>
                 <th>Tags</th>
@@ -38,6 +45,6 @@
     <a href="{{ path('quack_index') }}">back to list</a>
 
     <a href="{{ path('quack_edit', {'id': quack.id}) }}">edit</a>
-
+    {{ include('quack/_form_comment.html.twig') }}
     {{ include('quack/_delete_form.html.twig') }}
 {% endblock %}

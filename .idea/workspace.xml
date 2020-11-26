@@ -20,22 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12d159b2-085a-4323-9eca-c118a0bd6f8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/quack/_form_comment.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd85b886-58e5-4519-bbab-0b2f79e5d647.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/quacknet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quacknet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123143536.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123161447.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201124103246.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbce0f97dcaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcf9695f8ea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcf97e9ba9c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcf9e5d22c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcfa0ae2992.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcfb1544383.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbcfb2d9b31e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbd0ac66f93a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbe251ce0997.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbe51b83c9a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbe528c0cf03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbe55f08e534.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/paint-4588860-640-5fbe5609397e7.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/QuackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QuackController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Quack.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Quack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/QuackType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/QuackType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quack/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/duck/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/duck/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/quack/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/quack/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quack/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,13 +176,14 @@
     <property name="DatabaseDriversLRU" value="redshift&#10;sqlite.xerial" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/duck" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/quack" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\campus\projet-symfony\quacknet\templates\quack" />
       <recent name="C:\Users\campus\projet-symfony\quacknet\templates\duck" />
     </key>
   </component>
@@ -188,7 +199,7 @@
       <workItem from="1605971842216" duration="9165000" />
       <workItem from="1606120314328" duration="23542000" />
       <workItem from="1606205626753" duration="15881000" />
-      <workItem from="1606290256833" duration="15557000" />
+      <workItem from="1606290256833" duration="49903000" />
     </task>
     <servers />
   </component>
@@ -212,10 +223,10 @@
       <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
     <state x="-1248" y="-126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605973492476" />
-    <state x="2" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606223960706">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606396320295">
+      <screen x="-1680" y="-289" width="1680" height="1010" />
     </state>
-    <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1605976662065" />
+    <state x="-1678" y="-289" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@-1680.-289.1680.1010" timestamp="1606396320295" />
     <state x="2" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1680.-289.1680.1010@0.0.1366.728" timestamp="1606223960706" />
     <state x="-1110" y="-30" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606120522247">
       <screen x="-1680" y="-289" width="1680" height="1010" />

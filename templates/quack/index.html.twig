@@ -17,8 +17,10 @@
         <tbody>
         <a href="{{ path('duck_index') }}">Mon Profil</a>
         {% for quack in quacks %}
+            {% if quack.parent == null %}
             <tr>
                 <td><img src="{{ asset('upload/' ~ quack.picture) }} "></td>
+
                 <td>{{ quack.content }}</td>
                 <td>{{ quack.autor.duckname }}</td>
                 <td>{{ quack.createdAt ? quack.createdAt|date('Y-m-d H:i:s') : '' }}</td>
@@ -27,10 +29,7 @@
                     <a href="{{ path('quack_edit', {'id': quack.id}) }}">edit</a>
                 </td>
             </tr>
-        {% else %}
-            <tr>
-                <td colspan="4">no records found</td>
-            </tr>
+            {% endif %}
         {% endfor %}
         </tbody>
     </table>

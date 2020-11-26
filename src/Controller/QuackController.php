@@ -2,11 +2,9 @@
 
 namespace App\Controller;
 
-use App\Entity\Duck;
 use App\Entity\Quack;
-use App\Entity\Tag;
+use App\Form\CommentType;
 use App\Form\QuackType;
-use App\Form\TagType;
 use App\Repository\QuackRepository;
 use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -76,12 +74,30 @@ class QuackController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="quack_show", methods={"GET"})
+     * @Route("/{id}", name="quack_show", methods={"GET","POST"})
      */
-    public function show(Quack $quack): Response
+    public function show(Quack $quack, Request $request): Response
     {
+        $comment= new Quack();
+        $formComment = $this->createForm(CommentType::class, $comment);
+        $formComment->handleRequest($request);
+        $comment->setParent($quack);
+        $comment->setAutor($this->getUser());
+
+        $date =new DateTime("now", new \DateTimeZone('Europe/Paris'));
+        $comment->setCreatedAt($date);
+
+        if ($formComment->isSubmitted() && $formComment->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($comment);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('quack_index');
+        }
+
         return $this->render('quack/show.html.twig', [
             'quack' => $quack,
+            'formComment' => $formComment->createView(),
         ]);
     }
 
